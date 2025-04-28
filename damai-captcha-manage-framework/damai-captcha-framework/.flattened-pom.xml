@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.damai</groupId>
+  <artifactId>damai-captcha-framework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>3.3.0</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-starter-logging</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <version>3.3.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.damai</groupId>
+      <artifactId>damai-common</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.damai</groupId>
+      <artifactId>damai-base-captcha</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
