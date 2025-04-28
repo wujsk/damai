@@ -18,6 +18,8 @@
         <module>damai-common</module>
         <module>damai-redis-tool-framework</module>
         <module>damai-captcha-manage-framework</module>
+        <module>damai-spring-cloud-framework</module>
+        <module>damai-spring-cloud-framework/damai-service-common</module>
     </modules>
 
     <properties>
