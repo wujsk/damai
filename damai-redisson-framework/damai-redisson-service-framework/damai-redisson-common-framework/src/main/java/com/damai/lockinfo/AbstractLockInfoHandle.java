@@ -76,6 +76,13 @@ public abstract class AbstractLockInfoHandle implements LockInfoHandle {
         return method;
     }
 
+    /**
+     * 获取spEl表达式 例: keys = ["#user.id", "#order.skuId"]
+     * @param definitionKeys
+     * @param method
+     * @param parameterValues
+     * @return
+     */
     private List<String> getSpElKey(String[] definitionKeys, Method method, Object[] parameterValues) {
         List<String> definitionKeyList = new ArrayList<>();
         for (String definitionKey : definitionKeys) {
