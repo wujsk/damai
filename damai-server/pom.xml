@@ -9,13 +9,14 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>damai-spring-cloud-framework</artifactId>
-    <name>spring-cloud-framework</name>
-    <description>spring-cloud组件</description>
+
+    <artifactId>damai-server</artifactId>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>damai-service-initialize</module>
-    </modules>
+    <name>server</name>
+    <description>服务模块</description>
 
+    <modules>
+        <module>damai-user-service</module>
+    </modules>
 </project>
