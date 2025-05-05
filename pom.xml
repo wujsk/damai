@@ -19,9 +19,8 @@
         <module>damai-redis-tool-framework</module>
         <module>damai-captcha-manage-framework</module>
         <module>damai-spring-cloud-framework</module>
-        <module>damai-spring-cloud-framework/damai-service-common</module>
         <module>damai-redisson-framework</module>
-        <module>damai-redisson-framework/damai-redisson-service-framework</module>
+        <module>damai-id-generator-framework</module>
     </modules>
 
     <properties>
