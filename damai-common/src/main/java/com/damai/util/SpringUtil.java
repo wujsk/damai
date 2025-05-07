@@ -1,6 +1,9 @@
 package com.damai.util;
 
 
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 
@@ -11,7 +14,7 @@ import static com.damai.constant.Constant.PREFIX_DISTINCTION_NAME;
  * @author: haonan
  * @description: spring 工具类
  */
-public class SpringUtil implements ApplicationContextInitializer<ConfigurableApplicationContext> {
+public class SpringUtil implements ApplicationContextAware {
 
     private static ConfigurableApplicationContext configurableApplicationContext;
 
@@ -21,7 +24,7 @@ public class SpringUtil implements ApplicationContextInitializer<ConfigurableApp
     }
 
     @Override
-    public void initialize(ConfigurableApplicationContext applicationContext) {
-        configurableApplicationContext = applicationContext;
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        configurableApplicationContext = (ConfigurableApplicationContext) applicationContext;
     }
 }
