@@ -18,5 +18,6 @@
 
     <modules>
         <module>damai-user-service</module>
+        <module>damai-base-data-service</module>
     </modules>
 </project>

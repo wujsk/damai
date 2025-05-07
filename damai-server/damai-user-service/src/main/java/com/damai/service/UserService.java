@@ -9,6 +9,8 @@ import com.damai.vo.UserLoginVo;
 import com.damai.vo.UserVo;
 import jakarta.validation.Valid;
 
+import java.util.List;
+
 /**
  * @author: haonan
  * @description: 用户 service
@@ -98,4 +100,10 @@ public interface UserService extends IService<User> {
      * @return
      */
     UserGetAndTicketUserListVo getUserAndTicketUserList(@Valid UserGetAndTicketUserListDto userGetAndTicketUserListDto);
+
+    /**
+     * 查询所有手机号
+     * @return
+     */
+    public List<String> getAllMobile();
 }

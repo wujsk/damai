@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baidu.fsg.uid.UidGenerator;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.damai.annotion.ServiceLock;
@@ -46,6 +47,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import static com.damai.core.DistributedLockConstants.REGISTER_USER_LOCK;
 
@@ -415,5 +417,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
                 .userVo(userVo)
                 .ticketUserVoList(ticketUserVos)
                 .build();
+    }
+
+    @Override
+    public List<String> getAllMobile() {
+        QueryWrapper<User> lambdaQueryWrapper = Wrappers.emptyWrapper();
+        List<User> users = list(lambdaQueryWrapper);
+        return users.stream().map(User::getMobile).collect(Collectors.toList());
     }
 }
