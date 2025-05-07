@@ -18,6 +18,7 @@
 
     <modules>
         <module>damai-user-client</module>
+        <module>damai-base-data-client</module>
     </modules>
 
     <dependencies>

@@ -22,9 +22,8 @@
         <module>damai-redisson-framework</module>
         <module>damai-id-generator-framework</module>
         <module>damai-server-client</module>
-        <module>damai-server-client/damai-user-client</module>
         <module>damai-server</module>
-        <module>damai-server/damai-user-service</module>
+        <module>damai-thread-pool-framework</module>
     </modules>
 
     <properties>
