@@ -24,6 +24,7 @@
         <module>damai-server-client</module>
         <module>damai-server</module>
         <module>damai-thread-pool-framework</module>
+        <module>damai-redisson-framework/damai-service-delay-queue-framework</module>
     </modules>
 
     <properties>
