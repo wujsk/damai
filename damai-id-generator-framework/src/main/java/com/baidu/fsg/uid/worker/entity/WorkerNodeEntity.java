@@ -103,7 +103,7 @@ public class WorkerNodeEntity {
         return launchDate;
     }
 
-    public void setLaunchDateDate(Date launchDate) {
+    public void setLaunchDate(Date launchDate) {
         this.launchDate = launchDate;
     }
 
